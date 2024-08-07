@@ -1,0 +1,8 @@
+<h1 class="text-center m-3">index restaurant</h1>
+
+<ul class="m-1">
+  <%@restaurants.each do |resto| %>
+    <li ><%=resto.name%> - <%=resto.address %> <div class="btn btn-sm"><%= link_to "...", restaurant_path(resto)%></div>
+</li>
+  <%end %>
+</ul>
